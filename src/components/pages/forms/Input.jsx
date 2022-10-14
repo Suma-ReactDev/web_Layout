@@ -1,14 +1,13 @@
 import React from 'react'
-
-const Input = ({label,errorMessage, ...rest}) => {
+import { Field } from 'formik'
+  const Input = ({label,name, ...rest}) => {
   return (
-    <div>
-      <label>{label}</label>
-      <input
-      {...rest}
-       />
+    <div className='flex'>
+      <label htmlFor={name}>{label}</label>
+      <Field id={name} name={name} {...rest} />
     </div>
   )
 }
-
 export default Input
+
+ 

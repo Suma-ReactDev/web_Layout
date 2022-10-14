@@ -1,9 +1,8 @@
 import React, { useState } from 'react'
-import Input from './forms/Input'
+import LoginInput from './forms/loginInput'
  
 const Login = () => {
   const [variables, setVariables] = useState({userName:"", password:""})
-  const [islogin, setIsLogin] = useState(false)
   const onChangeHandler = (e) =>{
     setVariables({...variables, [e.target.name]:e.target.value})
     console.log(variables)
@@ -17,7 +16,7 @@ const Login = () => {
       <div className='flex flex-col items-center justify-items-center'>
       <form onSubmit={onSubmitHandler} 
       className='bg-slate-300 '>
-        <Input 
+        <LoginInput 
         label={'Username'}
         type='text'
         placeholder='User Name'
@@ -25,7 +24,7 @@ const Login = () => {
         onChange={onChangeHandler}
         value={variables.name}
         />
-        <Input 
+        <LoginInput 
         label={'Password'}
         placeholder='Password'
         type='text'

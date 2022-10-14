@@ -12,10 +12,10 @@ const FormikContainer = () => {
     }}>
       {(formik)=>{
         <Form>
-          <div className='gird grid-cols-2 place-content-center'>
+          <div className='grid grid-cols-2 place-content-center gap-x-10'>
             <FormikControl control='input' type='text' name='field1' label='Field1'/>
-            <FormikControl control='date' type='date'  name='field2' label='Field2'/>
-            <FormikControl control='select' type='select'  name='field3' label='Field3'/>
+            <FormikControl control='date' name='field2' label='Field2'/>
+            <FormikControl control='select' name='field3' label='Field3'/>
             <FormikControl control='select' type='select'  name='field4' label='Field4'/>
             <FormikControl control='select' type='select'  name='field5' label='Field5'/>
             <FormikControl control='input' type='select'  name='field6' label='Field6'/>
