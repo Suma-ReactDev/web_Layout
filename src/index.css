@@ -16,16 +16,16 @@
 
 @layer base{
   input {
-    @apply h-10 outline-none p-3 m-2 rounded-sm w-full flex
+    @apply h-10 outline-none p-3 m-2 rounded-sm w-full flex focus:outline-blue-700 
   }
   label{
-    @apply text-lg font-medium text-neutral-600 h-10
+    @apply text-lg font-medium text-neutral-900 h-10
   }
   form{
     @apply p-5 m-3
   }
   select{
-    @apply h-10 outline-none p-3 m-2 rounded-sm w-full flex bg-white
+    @apply h-10 outline-none p-3 m-2 rounded-sm w-full flex bg-white focus:outline-blue-700 
   }
 }
 

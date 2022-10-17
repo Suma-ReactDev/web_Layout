@@ -5,8 +5,10 @@ import { Field } from 'formik'
 
 const DatePickerField = ({label,name, ...props}) => {
   return (
-    <div className='flex'>
+    <div className='flex w-fit'>
+      <span className='w-20 '>
       <label htmlFor={name}>{label}</label>
+      </span>
       <Field name={name} id={name} >
         {({field, meta, form: {setFieldValue}})=>{
           return(
@@ -14,8 +16,8 @@ const DatePickerField = ({label,name, ...props}) => {
               style={{
                 height:'2.5rem',
                 textAlign:'left',
-                'margin':'0.25rem',
-                padding:'1rem'
+                padding:'1rem',
+                marginLeft:'1rem'
               }}
               containerStyle={{
                 width: "100%"
@@ -26,7 +28,7 @@ const DatePickerField = ({label,name, ...props}) => {
               onChange={(val) => {
                 setFieldValue(field.name, val);
               }}
-              placeholder='Pick Dates'
+              placeholder='dd-mm-yyyy'
               format='dd-MM-YYYY'
                />
           )

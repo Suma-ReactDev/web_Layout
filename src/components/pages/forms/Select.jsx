@@ -4,11 +4,12 @@ const Select = (props) => {
   const {label,name,options,...rest } = props
   return (
     <div className='flex'>
-      <label htmlFor={name}>{label}</label>
-      <Field id={name} {...rest} as={props.control} name={name} >
+      <span className='w-20'>
+        <label htmlFor={name}>{label}</label>
+      </span>
+      <Field id={name} name={name} {...rest} as='select'  >
          {options.map((option)=>
             <option
-              className=''
               key={option.value} 
               value={option.value}>
               {option.label}

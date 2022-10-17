@@ -5,7 +5,7 @@ import {Link} from 'react-router-dom'
 const Dropdown = ({dropdown, setDropdown}) => {
   return (
     <div className='relative'>
-      <ul className={`absolute w-36 list-none text-start top-20 right-5 ${dropdown ? null:'hidden'}`}
+      <ul className={`absolute w-36 list-none text-start top-20 right-0 ${dropdown ? null:'hidden'}`}
       onMouseLeave={()=>{setDropdown(false)}}>
         {formItems.map(item=>{
           return(

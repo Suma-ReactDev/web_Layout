@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import LoginInput from './forms/loginInput'
- 
+import {Link, NavLink, Outlet} from 'react-router-dom'
+
 const Login = () => {
   const [variables, setVariables] = useState({userName:"", password:""})
   const onChangeHandler = (e) =>{
