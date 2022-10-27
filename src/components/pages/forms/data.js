@@ -1,3 +1,4 @@
+import { useMemo } from "react"
 export const field3 =[
   {id:1, label:'Field3', value:''},
   {id:2, label:'Field31', value:'Field31'},
@@ -82,3 +83,120 @@ export const field46 =[
   {id:51, label:'Field46ii', value:'Field46ii'},
   {id:52, label:'Field46iii', value:'Field46iii'}
 ]
+
+export const COLUMNS = [
+    {
+      Header:'Table Results',
+      columns:[
+        {
+          Header:'S.No',
+          accessor:'1'
+        },
+        {
+          Header:'Coloumn 1',
+          accessor:'2'
+        },
+        {
+          Header:'Coloumn 2',
+          accessor:'3'
+        },
+        {
+          Header:'Coloumn 3',
+          accessor:'4'
+        },
+        {
+          Header:'Coloumn 4',
+          accessor:'5'
+        },
+        {
+          Header:'Coloumn 5',
+          accessor:'6'
+        },
+        {
+          Header:'Coloumn 6',
+          accessor:'7'
+        },
+        {
+          Header:'Coloumn 7',
+          accessor:'8'
+        },
+      ]}
+    ]
+
+    export const formikcontrol = [
+      {
+        control:'input',
+        type:'text',
+        label:'Field1',
+        name:'field1',
+        placeholder:'Field1'
+    },
+    {
+      control:'date',
+      label:'Field2',
+      name:'field2',
+      placeholder:'Multi Date Picker'
+    },
+    {
+      control:'select',
+      options:field3,
+      label:'Field3', 
+      name:'field3',
+      placeholder:'Field3'
+    },
+    {
+      control:'select',
+      options:field3,
+      name:'field4',
+      label:'Field4'
+    },
+    {
+      control:'select',
+      options:field5,
+      name:'field5',
+      label:'Field5'
+    },
+    {
+      control:'input',
+      type:'text',
+      name:'field6', 
+      label:'Field6' 
+    },
+    {
+      control:'input',  
+      type:'text',
+      name:'field7',
+      label:'Field7' 
+    },
+    {
+      control:'select',   
+      name:'field8',
+      label:'Field8', 
+      options:field8
+    },
+    {
+      control:'input',   
+      type:'text', 
+      name:'field9', 
+      label:'Field9'
+    },
+    {
+      control:'input',   
+      type:'text', 
+      name:'field10',
+      label:'Field10' 
+    },
+    {
+      control:'select',   
+      name:'field11', 
+      label:'Field11',
+      options:field11
+    },
+    {
+      control:'select',
+      name:'field12',  
+      label:'Field12', 
+      options:field12
+    },
+    ]
+    

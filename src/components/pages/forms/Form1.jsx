@@ -5,7 +5,7 @@ import { field3,field4,field5,field6,field7,field8,field11,field12, field43, fie
 const Form1 = () => {
 
   return (
-    <div className='grid mx-auto bg-slate-300 min-h-screen pl-32 pr-32'>
+    <div className='grid mx-auto bg-white min-h-screen pl-32 pr-32'>
      <Formik
     initialValues={{field1:'',field2:['','','','',''], field3:'', field4:'', field5:'', 
                     field6:'', field7:'', field8:'', field9:'', field10:'', 
@@ -24,7 +24,7 @@ const Form1 = () => {
       {(formik)=>{
         console.log(formik)
         return(
-          <Form className='border-8 border-double bg-indigo-400' >
+          <Form className='border-8 border-double bg-slate-400' >
           <div className='grid grid-cols-2 place-content-center gap-x-10 '>
             <FormikControl control='input' type='text' name='field1' label='Field1'/>
             <FormikControl control='date'   name='field2' label='Field2'/>
